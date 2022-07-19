@@ -1,6 +1,5 @@
+const router = require("./pessoasRoute")
 
-module.exports = app => {  
-  app.get('/', (req, res) => {
-    res.send('Olá!')
-  })
+module.exports = app => {
+  app.use(router)
 }
