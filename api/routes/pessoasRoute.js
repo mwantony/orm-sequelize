@@ -1,26 +1,12 @@
-const {Router} = require('express')
+const { Router } = require('express')
 const PessoaController = require('../controllers/PessoaController')
 
 const router = Router()
 
-router.get('/pessoas', (req, res) => {
-  PessoaController.pegaTodasAsPessoas(req, res)
-})
-
-router.get('/pessoas/:id', (req, res) => {
-  PessoaController.pegaUmaPessoa(req, res)
-})
-
-router.post('/pessoas', (req, res) => {
-  PessoaController.criaPessoa(req, res)
-})
-
-router.put('/pessoas/:id', (req, res) => {
-  PessoaController.atualizaPessoa(req, res)
-})
-
-router.delete('/pessoas/:id', (req, res) => {
-  PessoaController.apagaPessoa(req, res)
-})
+router.get('/pessoas', PessoaController.pegaTodasAsPessoas)
+router.get('/pessoas/:id', PessoaController.pegaUmaPessoa)
+router.post('/pessoas', PessoaController.criaPessoa)
+router.put('/pessoas/:id', PessoaController.atualizaPessoa)
+router.delete('/pessoas/:id', PessoaController.apagaPessoa)
 
 module.exports = router

@@ -4,28 +4,21 @@
   "description": "",
   "main": "./api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon .api/index.js"
+    "start": "nodemon ./api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mwantony/orm-sequelize.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mwantony/orm-sequelize/issues"
-  },
-  "homepage": "https://github.com/mwantony/orm-sequelize#readme",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "express": "^4.18.1",
-    "mysql2": "^2.3.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
     "path": "^0.12.7",
-    "sequelize": "^6.21.3",
-    "sequelize-cli": "^6.4.1"
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.3"
   }
 }
